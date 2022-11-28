@@ -96,22 +96,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\AdminPanel\Assets\Css\AdminLayout.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\AdminPanel\AdminPanelAreaRegistration.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DummyBazaarModel.cs" />
     <Compile Include="Models\Manager.cs" />
-    <Compile Include="Models\ManegerType.cs" />
+    <Compile Include="Models\ManagerType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Areas\AdminPanel\Views\web.config" />
+    <Content Include="Areas\AdminPanel\Views\Shared\_LayoutPage1.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\Home\Index.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -122,6 +128,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\AdminPanel\Assets\Js\" />
+    <Folder Include="Areas\AdminPanel\Assets\İmages\" />
+    <Folder Include="Areas\AdminPanel\Data\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>

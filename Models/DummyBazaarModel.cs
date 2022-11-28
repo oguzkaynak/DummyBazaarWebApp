@@ -13,7 +13,7 @@ namespace DummyBazaarWebApp.Models
 
         }
         public DbSet<Manager> Managers { get; set; }
-        public virtual DbSet<ManegerType>ManegerTypes { get; set; }
+        public virtual DbSet<ManagerType>ManagerTypes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

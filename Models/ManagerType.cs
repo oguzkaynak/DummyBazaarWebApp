@@ -6,7 +6,7 @@ using System.Web;
 
 namespace DummyBazaarWebApp.Models
 {
-    public class ManegerType
+    public class ManagerType
     {
         public int ID { get; set; }
 

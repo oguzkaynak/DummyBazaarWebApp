@@ -11,10 +11,10 @@ namespace DummyBazaarWebApp.Models
     {
         public int ID { get; set; }
 
-        public int ManegerType_ID { get; set; }
+        public int ManagerType_ID { get; set; }
 
-        [ForeignKey("ManegerType_ID")]
-        public virtual ManegerType ManegerType { get; set; }
+        [ForeignKey("ManagerType_ID")]
+        public virtual ManagerType ManagerType { get; set; }
 
         [Required(ErrorMessage="Bu alan zorunludur")]
        [StringLength(maximumLength:50,ErrorMessage ="En fazla 50 karakter olabilir")]

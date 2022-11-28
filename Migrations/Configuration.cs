@@ -19,8 +19,10 @@ namespace DummyBazaarWebApp.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
-            context.ManegerTypes.AddOrUpdate(n => n.ID, new Models.ManegerType() { ID = 1, Name = "Admin" });
-            context.ManegerTypes.AddOrUpdate(n => n.ID, new Models.ManegerType() { ID = 2, Name = "Moderatör" });
+            context.ManagerTypes.AddOrUpdate(n => n.ID, new Models.ManagerType() { ID = 1, Name = "Admin" });
+            context.ManagerTypes.AddOrUpdate(n => n.ID, new Models.ManagerType() { ID = 2, Name = "Moderatör" });
+
+            context.Managers.AddOrUpdate(n => n.ID, new Models.Manager() { ID = 1, Name ="Alp",Surname="Sarikiþla",Mail="a.sarikiþla@veksis.com",ManagerType_ID= 1,Password="1234",UserName="a.sarikiþla",IsActive=true });
         }
     }
 }
