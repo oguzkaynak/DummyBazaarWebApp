@@ -22,7 +22,7 @@ namespace DummyBazaarWebApp.Migrations
             context.ManagerTypes.AddOrUpdate(n => n.ID, new Models.ManagerType() { ID = 1, Name = "Admin" });
             context.ManagerTypes.AddOrUpdate(n => n.ID, new Models.ManagerType() { ID = 2, Name = "Moderatör" });
 
-            context.Managers.AddOrUpdate(n => n.ID, new Models.Manager() { ID = 1, Name ="Alp",Surname="Sarikiþla",Mail="a.sarikiþla@veksis.com",ManagerType_ID= 1,Password="1234",UserName="a.sarikiþla",IsActive=true });
+            context.Managers.AddOrUpdate(n => n.ID, new Models.Manager() { ID = 1, Name ="Alp",Surname="Sarikiþla",Mail="a.sarikiþla@veksis.com",ManagerType_ID= 1,Password="12345678",UserName="a.sarikiþla",IsActive=true });
         }
     }
 }

@@ -97,20 +97,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\AdminPanel\Assets\Css\AdminLayout.css" />
+    <Content Include="Areas\AdminPanel\Assets\Css\FormDizayn.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\AdminPanel\AdminPanelAreaRegistration.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\CategoryControllerController.cs" />
     <Compile Include="Areas\AdminPanel\Controllers\HomeController.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\DummyBazaarModel.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\ManagerType.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +123,10 @@
     <Content Include="Areas\AdminPanel\Views\web.config" />
     <Content Include="Areas\AdminPanel\Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Areas\AdminPanel\Views\Home\Index.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\CategoryController\Create.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\CategoryController\Index.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\CategoryController\Edit.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\Product\Create.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

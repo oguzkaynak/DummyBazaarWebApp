@@ -47,7 +47,7 @@ audio:not([controls]) {
 
 a {
     background-color: transparent;
-    txt-decoration: none;
+    text-decoration: none;
 }
 
     a:active, a:hover {
@@ -268,16 +268,47 @@ h6 {
 }
 
 .sidebar {
-    width: 300px;
     height: 1000px;
     float: left;
+    width: 20%;
 }
 
 .main {
+    width:80%;
     margin-top: 40px;
     float: left;
     padding: 10px 20px;
 }
+.userPanel{
+    margin-top:40px;
+    padding:30px 20px;
+}
 .container{
     padding:0.01em 16px;
+}
+.sidebarMenu{
+    list-style-type:none;
+    margin-top:20px;
+  
+}
+.sidebarMenu a li{
+    padding:7px;
+    background-color:#1b2838;
+    border-bottom:1px solid #171a21;
+}
+.sidebarMenu a li:hover{
+    background-color:#29415f;
+}
+.sidebarMenu a{
+    text-decoration:none;
+    color:white;
+}
+.createButton {
+    background-color:#1b2838;
+    color:white;
+    padding:7px 25px;
+    text-align:center;
+    font-weight:900;
+    border:1px solid #025151;
+    border-radius:5px;
 }
